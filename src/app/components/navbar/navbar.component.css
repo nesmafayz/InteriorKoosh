@@ -1,0 +1,62 @@
+.custom-navbar {
+    backdrop-filter: blur(30px); 
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px; 
+  }
+  
+  .navbar-nav .nav-link {
+    cursor:pointer;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; 
+    color: white !important;
+  }
+  
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background:#cd9c20; /* Baby blue color */
+    transition: width 1s ease;
+    -webkit-transition: width 1s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #cd9c20;  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  
+  .mx-auto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  body {
+    padding-top: 70px; /* Adjust based on navbar height */
+  }
+  .navbar-brand img {
+    height:70px; /* Adjust height as needed */
+    width: 200px;
+}
+
+/* Optional margin adjustments */
+.ms-3 {
+    margin-left: 1rem; /* Adjust if you want more spacing from the left edge */
+}
