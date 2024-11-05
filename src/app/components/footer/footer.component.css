@@ -10,11 +10,11 @@
     height: 150px;
     position: relative;
     display: block;
-    fill: #b2a28c; /* Curve fill color */
+    fill:#F8F5F3; /* Curve fill color */
 }
 
 .shape-fill {
-    fill: #b2a28c;
+    fill: #F8F5F3;
 }
 
 .contact-icons {
