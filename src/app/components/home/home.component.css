@@ -103,11 +103,6 @@
   border-color: #f5cb5c;
 }
 
-.btn-outline {
-  background-color: #f2ecdd;  /* Off-white */
-  color: #cd9c20;
-  border: 1px solid #cd9c20;
-}
 
 /* Ensure buttons appear in the same line */
 .button-container {

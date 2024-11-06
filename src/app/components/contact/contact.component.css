@@ -1,0 +1,375 @@
+
+.hero-section {
+    position: relative;
+    height: 50vh;
+    background-image: url('../../../assets/images/system-call-center.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  /* Overlay with black blur effect */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);  /* Semi-transparent black */
+    backdrop-filter: blur(5px);  /* Adding blur effect */
+    z-index: 1;
+  }
+  
+  /* Content container */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;  
+    display: flex;
+    justify-content: Start;
+    align-items: center;
+  }
+  
+  /* Left side content (Contact Us text) */
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 30px; 
+    margin-top: 50px; 
+    width:300px;
+  }
+  
+  /* Make image height 25% */
+  .hero-section img {
+    height: 25%;
+    width: auto;
+    object-fit: cover;
+  }
+  
+  /* AOS animations */
+  .hero-title, .button-container {
+    opacity: 0;  /* Start hidden for AOS */
+  }
+  
+  /* Optional: Ensure the text is not centered but on the left */
+  .text-left {
+    text-align: left;
+  }
+  
+  /* Adjust for mobile screens */
+  @media (max-width: 767px) {
+    .hero-title {
+      font-size: 2rem;  /* Make the title smaller on mobile */
+    }
+    .hero-section img {
+      height: auto;  /* Make the image responsive */
+    }
+  }
+  
+
+
+
+
+  /* Global Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    background: #fafafa;
+    color: rgba(0, 0, 0, 0.6); /* Lightened black color */
+  }
+  
+  a {
+    transition: 0.3s all ease;
+    color: #cd9c20;
+    text-decoration:none;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none;
+  }
+  
+  h1, h2, h3, h4, h5,
+  .h1, .h2, .h3, .h4, .h5 {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: black;
+  }
+  
+  
+  
+  /* Section Padding */
+  .ftco-section {
+    padding: 7em 0;
+  }
+  
+  .ftco-no-pt {
+    padding-top: 0;
+  }
+  
+  .ftco-no-pb {
+    padding-bottom: 0;
+  }
+  
+  /* Heading Section */
+  .heading-section {
+    font-size: 28px;
+    color: black;
+  }
+  
+  /* Cover Background */
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  /* Form Control Styles */
+  .form-control {
+    height: 36px;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .form-control::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .form-control:-ms-input-placeholder { /* IE 0+ */
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .form-control:-moz-placeholder { /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .form-control:focus, .form-control:active {
+    border-color: #cd9c20 !important;
+  }
+  
+  textarea.form-control {
+    height: inherit !important;
+  }
+  
+  /* Wrapper */
+  .wrapper {
+    width: 100%;
+  }
+  
+  .contact-wrap {
+    background: #ffffff;
+  }
+  
+  /* Info Wrap */
+  .info-wrap {
+    height: 400px;
+  }
+  
+  .dbox {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  
+  .dbox p {
+    margin-bottom: 0;
+  }
+  
+  .dbox span {
+    font-weight: 500;
+    color: black;
+  }
+  
+  .dbox a {
+    color: #cd9c20;
+  }
+  
+  .dbox .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #cd9c20;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+  }
+  .dbox .icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease; 
+  }
+  
+  .dbox .icon span {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .dbox .text {
+    width: 100%;
+  }
+  
+  /* Button Styles */
+  .btn {
+    padding: 12px 16px;
+    cursor: pointer;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+    position: relative;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover, .btn:active, .btn:focus {
+    outline: none !important;
+  }
+  
+  .btn-primary {
+    background: #cd9c20 !important;
+    border-color: #cd9c20 !important;
+    color: white;
+  }
+  
+  i{
+    color:white;
+    font-size:2em;
+  }
+
+ 
+  
+  /* Contact Form */
+  .contactForm .label {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+
+  }
+  
+  .contactForm .form-control {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+  }
+  
+  /* Forms */
+  #contactForm .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  #contactForm .form-control {
+    font-size: 16px;
+  }
+  
+  #message {
+    resize: vertical;
+  }
+  
+  #form-message-warning, #form-message-success {
+    display: none;
+  }
+  
+  #form-message-warning {
+    color: red;
+  }
+  
+  #form-message-success {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+
+  
+  /* buttons */
+
+  /* General Button Style */
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #cd9c20;  /* Updated with your requested color */
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 14px;  /* Adjusted font size for readability */
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  .btn:hover {
+    opacity: 0.95;
+  }
+  
+  .btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+  
+  /* Button Color Variations */
+  .btn-primary {
+    background-color: #f5cb5c;  /* Light yellow */
+    border-color: #f5cb5c;
+  }
+  
+  
+  /* Ensure buttons appear in the same line */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Space between buttons */
+  }
+  
+  .attach {
+      background-image: url("../../../assets/images/view-futuristic-lighting-lamp-design.jpg");
+      background-size: cover; /* Ensures the image covers the entire area */
+      background-position: center center; /* Centers the image */
+      background-attachment: fixed; /* Fixes the image when scrolling */
+      background-repeat: no-repeat; /* Prevents repeating the image */
+      height: 75vh; /* Optional, if you want it to fill the viewport */
+    }
+    
+    
+    

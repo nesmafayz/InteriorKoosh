@@ -1,5 +1,6 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import Typed from 'typed.js';
+import * as AOS from 'aos';
 
 
 @Component({
@@ -9,7 +10,12 @@ import Typed from 'typed.js';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements AfterViewInit, OnInit {
+
+  ngOnInit(): void {
+    AOS.init();
+  }
+
   @ViewChild('heroVideo') heroVideo!: ElementRef<HTMLVideoElement>;
 
   ngAfterViewInit() {
@@ -30,7 +36,10 @@ export class HomeComponent implements AfterViewInit {
       showCursor: false
     };
     new Typed('.typed-text', options);
+
+  
   }
+  
 
 }
 
