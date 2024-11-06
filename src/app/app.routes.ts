@@ -16,9 +16,10 @@ export const routes: Routes = [
 
   {
     path: 'contact',
-    loadComponent: () =>
-      import('./components/contact/contact.component').then(
-        (m) => m.ContactComponent
-      ),
+    loadComponent: () => import('./components/contact/contact.component').then((m) => m.ContactComponent ),
+  },
+  {
+    path: 'about',
+    loadComponent: () => import('./components/about/about.component').then( (m) => m.AboutComponent ),
   },
 ];

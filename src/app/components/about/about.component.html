@@ -1,0 +1,111 @@
+<div class="about-container">
+    <!-- Hero Section with Video Background -->
+    <div class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container-fluid hero-content">
+          <div class="row">
+            <div class="col-md-6 text-left text-white">
+              <h1 class="hero-title aos-init aos-animate" data-aos="fade-left" data-aos-duration="1500">
+               
+        <p class="hero-subtitle">About Us</p>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Company Vision with Timeline Section -->
+    <section class="vision-journey-section py-5" id="timeline">
+        <div class="container text-center">
+          <h2 class="display-4 mb-5 font-weight-bold">Our Vision & Journey</h2>
+          <div class="journey-timeline">
+            <!-- Timeline Item 1 -->
+            <div class="journey-timeline-item">
+              <div class="journey-timeline-icon bg-primary text-white">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <div class="journey-timeline-content">
+                <h4>Founded in 2000</h4>
+                <p>Our journey started with a commitment to redefining luxury.</p>
+              </div>
+            </div>
+      
+            <!-- Timeline Item 2 -->
+            <div class="journey-timeline-item">
+              <div class="journey-timeline-icon bg-success text-white">
+                <i class="fas fa-globe-americas"></i>
+              </div>
+              <div class="journey-timeline-content">
+                <h4>Expanded Globally - 2010</h4>
+                <p>Brought our expertise to new international markets.</p>
+              </div>
+            </div>
+      
+            <!-- Timeline Item 3 -->
+            <div class="journey-timeline-item">
+              <div class="journey-timeline-icon bg-warning text-white">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="journey-timeline-content">
+                <h4>Luxury Award - 2020</h4>
+                <p>Recognized for innovative interior design solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    <!-- Meet Our Team with Interactive Cards -->
+    <section class="team-section py-5 text-center">
+      <div class="container">
+        <h2 class="display-4 font-weight-bold mb-5">Meet Our Team</h2>
+        <div class="row">
+          <div class="col-md-4 my-2" *ngFor="let member of teamMembers">
+            <div class="team-card">
+              <img [src]="member.image" alt="{{ member.name }}" class="rounded-circle team-image" />
+              <h3>{{ member.name }}</h3>
+              <p>{{ member.role }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Client Testimonials with Carousel -->
+    <section class="testimonials-section py-5 text-center">
+      <div class="container">
+        <h2 class="display-4 font-weight-bold mb-5">What Our Clients Say</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>"A seamless experience that transformed our space!"</p>
+              <h4>- John Doe</h4>
+            </div>
+            <div class="carousel-item">
+              <p>"True professionals who exceeded expectations."</p>
+              <h4>- Sarah Lee</h4>
+            </div>
+            <div class="carousel-item">
+              <p>"Luxury and elegance embodied in every detail."</p>
+              <h4>- James Wong</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Material & Color Swatches Section -->
+    <section class="swatches-section py-5">
+      <div class="container text-center">
+        <h2 class="display-4 font-weight-bold mb-5">Our Materials & Colors</h2>
+        <div class="row">
+          <div class="col-6 col-md-3" *ngFor="let swatch of swatches">
+            <div class="swatch" [style.backgroundColor]="swatch.color"></div>
+            <p>{{ swatch.name }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
