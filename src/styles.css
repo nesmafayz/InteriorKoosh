@@ -8,6 +8,9 @@ body{
     /* cursor: url('../src/assets/images/Aura Gradient Animated--pointer--SweezyCursors.cur'), auto; */
 
 }
+:root {
+    --main-color: #cd9c20; 
+  }
 
 
 

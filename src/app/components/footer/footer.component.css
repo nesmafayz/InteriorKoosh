@@ -1,8 +1,8 @@
-.custom-shape-divider {
+/* .custom-shape-divider {
     position: relative;
     overflow: hidden;
     line-height: 0;
-    background-color: #333533; /* Light background color for the section */
+    background-color: #333533; 
 }
 
 .curve {
@@ -10,7 +10,7 @@
     height: 150px;
     position: relative;
     display: block;
-    fill:#F8F5F3; /* Curve fill color */
+    fill:#F8F5F3; 
 }
 
 .shape-fill {
@@ -19,7 +19,7 @@
 
 .contact-icons {
     position: absolute;
-    top: 50%; /* Position at the center */
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -34,11 +34,11 @@
     
 }
 .icon {
-    color: #f2ecdd; /* Updated link color */
+    color: #f2ecdd; 
     font-size: 24px;
     width: 40px;
     height: 40px;
-    background-color: #b2a28c; /* Background color for icons */
+    background-color: #b2a28c; 
     border-radius: 50%;
     display: flex;
     padding:25px;
@@ -49,11 +49,18 @@
 }
 .icon:hover {
     transform: scale(1.1);
-    background-color: #8c7b69; /* Slightly darker color for hover effect */
+    background-color: #8c7b69; 
 }
 .copyright {
     text-align: center;
-    color: #f2ecdd; /* Adjust color to match your theme */
-    margin-top: 10px; /* Space between icons and copyright */
+    color: #f2ecdd; 
+    margin-top: 10px; 
     font-size: 20px;
+} */
+
+
+
+
+footer{
+    background-color:#333533;
 }
