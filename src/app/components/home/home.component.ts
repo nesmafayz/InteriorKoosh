@@ -28,14 +28,14 @@ export class HomeComponent implements AfterViewInit, OnInit {
     video.play().catch(error => {
       console.error("Autoplay failed:", error);
     });
-    const options = {
-      strings: ['<span style="color: #cd9c20;">LOVE</span> WHERE YOU LIVE'],
-      typeSpeed: 120,
-      backSpeed: 25,
-      loop: true,
-      showCursor: false
-    };
-    new Typed('.typed-text', options);
+    // const options = {
+    //   strings: ['<span style="color: #cd9c20;">LOVE</span> WHERE YOU LIVE'],
+    //   typeSpeed: 120,
+    //   backSpeed: 25,
+    //   loop: true,
+    //   showCursor: false
+    // };
+    // new Typed('.typed-text', options);
 
   
   }
